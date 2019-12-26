@@ -1,0 +1,126 @@
+<!-- our webpage will be coded here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Eugene's music app</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body id="home">
+	<!-- nav section -->
+	<nav class="navbar navbar-expand-md bg-info navbar-dark py-3">
+		<!-- logo -->
+		<a href="#home" class="navbar-brand">Tap Music</a>
+		<!-- collapsible btn -->
+		<button class="navbar-toggler"  data-toggle="collapse" data-target="#navBarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- add links to our btn -->
+		<div class="collapse navbar-collapse" id="navBarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About Creator</a>
+				</li>
+				<li class="nav-item">
+					<i class="fas fa-search" aria-hidden="true"></i>
+					  <input class="form-control" type="text" placeholder="Search"
+					    aria-label="Search">
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="home-section" class="py-5 ">
+		<div class="container">
+			<div class="text-center ">
+				<h2 class="display-4">Welcome to Tap Music</h2>
+				<p class="text-muted">Tap any of the tiles below and see what happens</p>
+				<small>Enjoy!</small>
+			</div>
+		</div>
+	</section>
+	<!-- visual section -->
+	<!-- this section will show us our bubble effect when we tap on our colored tiles -->
+	<section id="visual-section" class="py-5 bg-warning">
+		<div class="container">
+			<div class="visual">
+				<!-- our bubbles will be displayed here! -->
+			</div>
+		</div>
+	</section>
+
+	<!-- colored cards/tiles section that we press to emit the sound -->
+	<section id="card-section" class="py-5 bg-info">
+		<div class="container">
+			<div class="row text-center text-white ">
+				<div class="col-md-2">
+					<div class="card bg-dark">
+						<div class="card-body">
+							<!-- we ensure to put our audio tags in divs since we can't style the audio tags but we can style our divs -->
+							<small>Bubbles</small>
+							<audio src="./sounds/bubbles.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card bg-danger">
+						<div class="card-body">
+							<small>Clay</small>
+							<audio src="./sounds/clay.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card bg-secondary">
+						<div class="card-body">
+							<small>Confetti</small>
+							<audio src="./sounds/confetti.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card bg-primary">
+						<div class="card-body">
+							<small>Glimer</small>
+							<audio src="./sounds/glimmer.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card bg-warning">
+						<div class="card-body">
+							<small>Moon</small>
+							<audio src="./sounds/moon.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card bg-success">
+						<div class="card-body">
+							<small>Ufo</small>
+							<audio src="./sounds/ufo.mp3" class="sound"></audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section -->
+	<section id="footer-section" class="py-3 bg-dark text-white">
+		<div class="container">
+			<p class="text-center">Created By Eugene Obare &copy2019 </p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
